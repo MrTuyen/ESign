@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C123340-AEA6-4784-ABE3-482F6002F700}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OnSign.BusinessObject</RootNamespace>
+    <AssemblyName>OnSign.BusinessObject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Product|AnyCPU'">
+    <OutputPath>bin\Product\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\..\OnSign\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\..\OnSign\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\OnSign\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SAB.Library.Core">
+      <HintPath>..\..\DLLs\SAB.Library.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountBO.cs" />
+    <Compile Include="Account\LogBO.cs" />
+    <Compile Include="Account\NotificationBO.cs" />
+    <Compile Include="Account\SignatureBO.cs" />
+    <Compile Include="BaseBO.cs" />
+    <Compile Include="Company\CompanyBO.cs" />
+    <Compile Include="Company\PackageBO.cs" />
+    <Compile Include="Document\LinkViewerBO.cs" />
+    <Compile Include="Document\ReportDocumentBO.cs" />
+    <Compile Include="Document\VerifyCodeBO.cs" />
+    <Compile Include="Email\EmailDataBO.cs" />
+    <Compile Include="Email\TemplateBO.cs" />
+    <Compile Include="Forms\CompanyFormBO.cs" />
+    <Compile Include="Forms\FormSearch.cs" />
+    <Compile Include="Forms\RegisterFormBO.cs" />
+    <Compile Include="Partners\CyberLotusBO.cs" />
+    <Compile Include="Partners\PG_ALERTBO.cs" />
+    <Compile Include="Permission\PermissionBO.cs" />
+    <Compile Include="Permission\PermissionGroupBO.cs" />
+    <Compile Include="Permission\PermissionUserBO.cs" />
+    <Compile Include="Sign\CERINFOBO.cs" />
+    <Compile Include="Sign\FormSearchReceive.cs" />
+    <Compile Include="Sign\PdfListSignUSB.cs" />
+    <Compile Include="Sign\PdfSignCyberBO.cs" />
+    <Compile Include="Sign\PdfSignHashDataCyberBO.cs" />
+    <Compile Include="Sign\PdfSignUSB.cs" />
+    <Compile Include="TemplateBO\DocumentTemplate.cs" />
+    <Compile Include="TemplateBO\DocumentTemplateBookmark.cs" />
+    <Compile Include="TemplateBO\DocumentTemplateData.cs" />
+    <Compile Include="TemplateBO\DocumentTemplatePdf.cs" />
+    <Compile Include="TemplateBO\DocumentTemplatePdfSign.cs" />
+    <Compile Include="TemplateBO\DocumentTemplateReceive.cs" />
+    <Compile Include="Logs\LogItemBO.cs" />
+    <Compile Include="Notifications\NotificationItemBO.cs" />
+    <Compile Include="Output\ItemUploadBO.cs" />
+    <Compile Include="Output\UserModelBO.cs" />
+    <Compile Include="Partners\InvoiceBO.cs" />
+    <Compile Include="Partners\TokenOnFinanceBO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sign\DocumentBO.cs" />
+    <Compile Include="Sign\DocumentSignBO.cs" />
+    <Compile Include="Sign\ReceiverBO.cs" />
+    <Compile Include="Sign\PdfSignBO.cs" />
+    <Compile Include="Sign\PdfSignedBO.cs" />
+    <Compile Include="Sign\RequestSignBO.cs" />
+    <Compile Include="Transaction_Documents\RequestLogBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OnSign.Common\OnSign.Common.csproj">
+      <Project>{b91940bd-3dce-46bc-9670-f069afc5ff20}</Project>
+      <Name>OnSign.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommonBL\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

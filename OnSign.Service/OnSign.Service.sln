@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSign.BusinessObject", "OnSign.Service\OnSign.BusinessObject.csproj", "{5C123340-AEA6-4784-ABE3-482F6002F700}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSign.BusinessLogic", "OnSign.BusinessLogic\OnSign.BusinessLogic.csproj", "{74E0A924-DE72-4A66-B596-F01659D57E90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSign.Common", "OnSign.Common\OnSign.Common.csproj", "{B91940BD-3DCE-46BC-9670-F069AFC5FF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSign.DataObject", "OnSign.DataObject\OnSign.DataObject.csproj", "{60FEA56C-D3C4-4B09-B17C-F846C3D6F74C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSign2", "..\OnSign2\OnSign2\OnSign2.csproj", "{3907245D-BDF0-4417-BA25-5ABEAA9504D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnSign", "..\OnSign\OnSign\OnSign.csproj", "{23E0DF98-3699-49F8-84AE-A944A406D5F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C123340-AEA6-4784-ABE3-482F6002F700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C123340-AEA6-4784-ABE3-482F6002F700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C123340-AEA6-4784-ABE3-482F6002F700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C123340-AEA6-4784-ABE3-482F6002F700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E0A924-DE72-4A66-B596-F01659D57E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E0A924-DE72-4A66-B596-F01659D57E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E0A924-DE72-4A66-B596-F01659D57E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E0A924-DE72-4A66-B596-F01659D57E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91940BD-3DCE-46BC-9670-F069AFC5FF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91940BD-3DCE-46BC-9670-F069AFC5FF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91940BD-3DCE-46BC-9670-F069AFC5FF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91940BD-3DCE-46BC-9670-F069AFC5FF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60FEA56C-D3C4-4B09-B17C-F846C3D6F74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60FEA56C-D3C4-4B09-B17C-F846C3D6F74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60FEA56C-D3C4-4B09-B17C-F846C3D6F74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60FEA56C-D3C4-4B09-B17C-F846C3D6F74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3907245D-BDF0-4417-BA25-5ABEAA9504D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3907245D-BDF0-4417-BA25-5ABEAA9504D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3907245D-BDF0-4417-BA25-5ABEAA9504D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3907245D-BDF0-4417-BA25-5ABEAA9504D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E0DF98-3699-49F8-84AE-A944A406D5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E0DF98-3699-49F8-84AE-A944A406D5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E0DF98-3699-49F8-84AE-A944A406D5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E0DF98-3699-49F8-84AE-A944A406D5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9082EF80-05B1-4583-8C86-8B5CA2B88FBD}
+	EndGlobalSection
+EndGlobal
